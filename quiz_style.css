@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Outfit:wght@100..900&display=swap');
+.outfit-font {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: 'Outfit', sans-serif;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+#rules, #form{
+    margin-top: 15px;
+    padding: 10px 40px;
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px;
+}
+#rules h2,h3{
+    text-align: center;
+    margin: 20px;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+form{
+    width: 100%;
+}
+.ques{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+.label{
+    display:block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.opt{
+    display: flex;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 15px;
+    width: 47%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+}
+.custombtn{
+    display: flex;
+    height: 25px;
+    width: 25px;
+    border: 3px solid black;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.custombtn input{
+    display: none;
+}
+.custombtn .checkmark{
+    height: calc(100% - 6px);
+    width: calc(100% - 6px);
+    border-radius: 50%;
+    background-color: black;
+    display: none;
+}
+.custombtn input:checked + .checkmark{
+    display: inline-block;
+}
+
