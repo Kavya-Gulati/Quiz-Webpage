@@ -18,7 +18,7 @@ header{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: auto;
+    font-size: 20px;
 }
 #rules, #form{
     margin-top: 15px;
@@ -38,6 +38,8 @@ main{
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 form{
     width: 100%;
@@ -98,17 +100,20 @@ form{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 15px;
 }
 .submitbtn button{
-    background-color:rgb(170, 90, 103);
+    background-color:hsl(107, 73%, 40%);
     border:none;
     border-radius:12px;
     padding:8px 12px;
+    font-family: "Outfit";
+    font-size: 24px;
     transition: all 0.3s;
 }
 .submitbtn button:hover{
+    cursor: pointer;
     transform: scale(110%);
-    background:linear-gradient(to right,hsl(300, 76%, 42%),hsl(284, 87%, 73%));
 }
 
 @media screen and (max-width:600px){
