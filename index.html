@@ -20,7 +20,6 @@
                 <li>Each question has <b>4 options</b>, out of which <b>only one option is correct</b>.</li>
                 <li>You will receive <b>1 point for every correct answer</b>.</li>
                 <li><b>No points</b> will be awarded for an incorrect answer.</li>
-                <li><b>All questions are mandatory</b> and must be answered.</li>
                 <li>Once you have answered all the questions, click the <b>Submit</b> button to view your <b>score and answer key<b>.</li>
             </ol>
 
@@ -33,37 +32,37 @@
 
     <main>
         <div id = 'form'>
-            <form id="quizform">
+            <form id="quizform" onsubmit="checkQuiz(); return false;">
 
                 <div class = 'ques'>
                     <label class = 'label' for="q1">Q1. What is the capital of India?</label>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q1' value = 'A'>
+                            <input class = 'input' type = 'radio' name = 'q1' value = 'A' id = 'q1A'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Mumbai</label>
+                        <label for = 'q1A'>Mumbai</label>
                     </div>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q1' value = 'B'>
+                            <input class = 'input' type = 'radio' name = 'q1' value = 'B' id = 'q1B'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>New Delhi</label>
+                        <label for = 'q1B'>New Delhi</label>
                     </div>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q1' value = 'C'>
+                            <input class = 'input' type = 'radio' name = 'q1' value = 'C' id = 'q1C'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Chennai</label>
+                        <label for = 'q1C'>Chennai</label>
                     </div>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q1' value = 'D'>
+                            <input class = 'input' type = 'radio' name = 'q1' value = 'D' id = 'q1D'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Kolkata</label>
+                        <label for = 'q1D'>Kolkata</label>
                     </div>
                 </div>
 
@@ -71,31 +70,31 @@
                     <label class = 'label' for="q2">Q2. Who is known as the Father of the Indian Constitution?</label>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q2' value = 'A'>
+                            <input class = 'input' type = 'radio' name = 'q2' value = 'A' id = 'q2A'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Dr. Rajendra Prasad</label>
+                        <label for = 'q2A'>Dr. Rajendra Prasad</label>
                     </div>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q2' value = 'B'>
+                            <input class = 'input' type = 'radio' name = 'q2' value = 'B' id = 'q2B'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Jawaharlal Nehru</label>
+                        <label for = 'q2B'>Jawaharlal Nehru</label>
                     </div>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q2' value = 'C'>
+                            <input class = 'input' type = 'radio' name = 'q2' value = 'C' id = 'q2C'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Dr. B.R. Ambedkar</label>
+                        <label for = 'q2C'>Dr. B.R. Ambedkar</label>
                     </div>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q2' value = 'D'>
+                            <input class = 'input' type = 'radio' name = 'q2' value = 'D' id = 'q2D'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Sardar Vallabhbhai Patel</label>
+                        <label for = 'q2D'>Sardar Vallabhbhai Patel</label>
                     </div>
                 </div>
 
@@ -103,31 +102,31 @@
                     <label class = 'label' for="q3">Q3. Which is the national animal of India?</label>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q3' value = 'A'>
+                            <input class = 'input' type = 'radio' name = 'q3' value = 'A' id = 'q3A'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Peacock</label>
+                        <label for = 'q3A'>Peacock</label>
                     </div>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q3' value = 'B'>
+                            <input class = 'input' type = 'radio' name = 'q3' value = 'B' id = 'q3B'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Indian Elephant</label>
+                        <label for = 'q3B'>Indian Elephant</label>
                     </div>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q3' value = 'C'>
+                            <input class = 'input' type = 'radio' name = 'q3' value = 'C' id = 'q3C'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Royal Bengal Tiger</label>
+                        <label for = 'q3C'>Royal Bengal Tiger</label>
                     </div>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q3' value = 'D'>
+                            <input class = 'input' type = 'radio' name = 'q3' value = 'D' id = 'q3D'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Asiatic Lion</label>
+                        <label for = 'q3D'>Asiatic Lion</label>
                     </div>
                 </div>
 
@@ -135,31 +134,31 @@
                     <label class = 'label' for="q4">Q4. Which river is often called the longest river in India?</label>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q4' value = 'A'>
+                            <input class = 'input' type = 'radio' name = 'q4' value = 'A' id = 'q4A'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Narmada</label>
+                        <label for = 'q4A'>Narmada</label>
                     </div>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q4' value = 'B'>
+                            <input class = 'input' type = 'radio' name = 'q4' value = 'B' id = 'q4B'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Ganga</label>
+                        <label for = 'q4B'>Ganga</label>
                     </div>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q4' value = 'C'>
+                            <input class = 'input' type = 'radio' name = 'q4' value = 'C' id = 'q4C'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Godavari</label>
+                        <label for = 'q4C'>Godavari</label>
                     </div>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q4' value = 'D'>
+                            <input class = 'input' type = 'radio' name = 'q4' value = 'D' id = 'q4D'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Yamuna</label>
+                        <label for = 'q4D'>Yamuna</label>
                     </div>
                 </div>
 
@@ -167,31 +166,31 @@
                     <label class = 'label' for="q5">Q5. What is the national flower of India?</label>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q5' value = 'A'>
+                            <input class = 'input' type = 'radio' name = 'q5' value = 'A' id = 'q5A'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Rose</label>
+                        <label for = 'q5A'>Rose</label>
                     </div>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q5' value = 'B'>
+                            <input class = 'input' type = 'radio' name = 'q5' value = 'B' id = 'q5B'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Sunflower</label>
+                        <label for = 'q5B'>Sunflower</label>
                     </div>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q5' value = 'C'>
+                            <input class = 'input' type = 'radio' name = 'q5' value = 'C' id = 'q5C'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Lotus</label>
+                        <label for = 'q5C'>Lotus</label>
                     </div>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q5' value = 'D'>
+                            <input class = 'input' type = 'radio' name = 'q5' value = 'D' id = 'q5D'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Marigold</label>
+                        <label for = 'q5D'>Marigold</label>
                     </div>
                 </div>
 
@@ -199,31 +198,31 @@
                     <label class = 'label' for="q6">Q6. Who was the first Prime Minister of independent India?</label>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q6' value = 'A'>
+                            <input class = 'input' type = 'radio' name = 'q6' value = 'A' id = 'q6A'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Lal Bahadur Shastri</label>
+                        <label for = 'q6A'>Lal Bahadur Shastri</label>
                     </div>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q6' value = 'B'>
+                            <input class = 'input' type = 'radio' name = 'q6' value = 'B' id = 'q6B'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Dr. Rajendra Prasad</label>
+                        <label for = 'q6B'>Dr. Rajendra Prasad</label>
                     </div>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q6' value = 'C'>
+                            <input class = 'input' type = 'radio' name = 'q6' value = 'C' id = 'q6C'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Indira Gandhi</label>
+                        <label for = 'q6C'>Indira Gandhi</label>
                     </div>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q6' value = 'D'>
+                            <input class = 'input' type = 'radio' name = 'q6' value = 'D' id = 'q6D'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Jawaharlal Nehru</label>
+                        <label for = 'q6D'>Jawaharlal Nehru</label>
                     </div>
                 </div>
 
@@ -231,31 +230,31 @@
                     <label class = 'label' for="q7">Q7. Which Indian city is known as the "Pink City"?</label>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q7' value = 'A'>
+                            <input class = 'input' type = 'radio' name = 'q7' value = 'A' id = 'q7A'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Jaipur</label>
+                        <label for = 'q7A'>Jaipur</label>
                     </div>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q7' value = 'B'>
+                            <input class = 'input' type = 'radio' name = 'q7' value = 'B' id = 'q7B'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Chandigarh</label>
+                        <label for = 'q7B'>Chandigarh</label>
                     </div>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q7' value = 'C'>
+                            <input class = 'input' type = 'radio' name = 'q7' value = 'C' id = 'q7C'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Jodhpur</label>
+                        <label for = 'q7C'>Jodhpur</label>
                     </div>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q7' value = 'D'>
+                            <input class = 'input' type = 'radio' name = 'q7' value = 'D' id = 'q7D'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Bhopal</label>
+                        <label for = 'q7D'>Bhopal</label>
                     </div>
                 </div>
 
@@ -263,31 +262,31 @@
                     <label class = 'label' for="q8">Q8. Which is the highest civilian award in India?</label>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q8' value = 'A'>
+                            <input class = 'input' type = 'radio' name = 'q8' value = 'A' id = 'q8A'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Padma Bhushan</label>
+                        <label for = 'q8A'>Padma Bhushan</label>
                     </div>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q8' value = 'B'>
+                            <input class = 'input' type = 'radio' name = 'q8' value = 'B' id = 'q8B'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Padma Vibhushan</label>
+                        <label for = 'q8B'>Padma Vibhushan</label>
                     </div>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q8' value = 'C'>
+                            <input class = 'input' type = 'radio' name = 'q8' value = 'C' id = 'q8C'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Bharat Ratna</label>
+                        <label for = 'q8C'>Bharat Ratna</label>
                     </div>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q8' value = 'D'>
+                            <input class = 'input' type = 'radio' name = 'q8' value = 'D' id = 'q8D'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Padma Shree</label>
+                        <label for = 'q8D'>Padma Shree</label>
                     </div>
                 </div>
 
@@ -295,31 +294,31 @@
                     <label class = 'label' for="q9">Q9. Which monument is located in Agra and is one of the Seven Wonders of the World?</label>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q9' value = 'A'>
+                            <input class = 'input' type = 'radio' name = 'q9' value = 'A' id = 'q9A'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Red Fort</label>
+                        <label for = 'q9A'>Red Fort</label>
                     </div>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q9' value = 'B'>
+                            <input class = 'input' type = 'radio' name = 'q9' value = 'B' id = 'q9B'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Taj Mahal</label>
+                        <label for = 'q9B'>Taj Mahal</label>
                     </div>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q9' value = 'C'>
+                            <input class = 'input' type = 'radio' name = 'q9' value = 'C' id = 'q9C'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Qutub Minar</label>
+                        <label for = 'q9C'>Qutub Minar</label>
                     </div>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q9' value = 'D'>
+                            <input class = 'input' type = 'radio' name = 'q9' value = 'D' id = 'q9D'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>Hawa Mahal</label>
+                        <label for = 'q9D'>Hawa Mahal</label>
                     </div>
                 </div>
 
@@ -327,31 +326,31 @@
                     <label class = 'label' for="q10">Q10. How many states are there in India?</label>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q10' value = 'A'>
+                            <input class = 'input' type = 'radio' name = 'q10' value = 'A' id = 'q10A'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>29</label>
+                        <label for = 'q10A'>29</label>
                     </div>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q10' value = 'B'>
+                            <input class = 'input' type = 'radio' name = 'q10' value = 'B' id = 'q10B'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>28</label>
+                        <label for = 'q10B'>28</label>
                     </div>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q10' value = 'C'>
+                            <input class = 'input' type = 'radio' name = 'q10' value = 'C' id = 'q10C'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>27</label>
+                        <label for = 'q10C'>27</label>
                     </div>
                     <div class = 'opt'>
                         <label class = 'custombtn'>
-                            <input class = 'input' type = 'radio' name = 'q10' value = 'D'>
+                            <input class = 'input' type = 'radio' name = 'q10' value = 'D' id = 'q10D'>
                             <span class = 'checkmark'></span>
                         </label>
-                        <label>30</label>
+                        <label for = 'q10D'>30</label>
                     </div>
                 </div>
                 <div class = 'submitbtn'>
@@ -361,5 +360,6 @@
         </div>
     </main>
     
+    <script src="quiz.js"></script>
 </body>
 </html>
