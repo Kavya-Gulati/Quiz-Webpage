@@ -18,6 +18,7 @@ header{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
     font-size: 20px;
 }
 #rules, #form{
@@ -31,6 +32,9 @@ header{
 #rules h2,h3{
     text-align: center;
     margin: 20px;
+}
+#rules li{
+    margin: 5px;
 }
 main{
     display: flex;
@@ -129,8 +133,22 @@ form{
     font-weight: 600;
 }
 
-@media screen and (max-width:600px){
-        aside,section,article{
-            width:100%
-        }
+@media only screen and (max-width:600px){
+    header{
+        font-size: 18px;
+    }
+    #rules, #form{
+        margin-top: 5px;
+        padding: 5px 30px;
+        width: 90%;
+    }
+    #rules h2,h3{
+        margin: 30px;
+    }
+    .ques{
+        font-size: 18px;
+    }
+    .opt{
+        width: 85%;
+    }
 }
