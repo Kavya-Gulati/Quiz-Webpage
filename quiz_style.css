@@ -77,6 +77,9 @@ form{
 .opt label{
     margin: 5px;
 }
+.opt label:hover{
+    cursor: pointer;
+}
 .custombtn{
     display: flex;
     height: 25px;
